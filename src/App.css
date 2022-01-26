@@ -30,6 +30,7 @@ body {
   align-items: center;
   margin: 20px 30px;
   transition: 0.5s;
+  text-align: center;
 }
 .container .box:hover {
   transform: translateY(-20px);
@@ -86,17 +87,15 @@ body {
 .container .box .content p{
   margin:10px 0 10px 0;
 }
-.container .box .content a{
-  color: #111111;
-  background: white;
-  font-weight: bold;
-  padding: 5px;
+.container .box .content img{
+  width: 230px;
+  height: 230px;
 }
 .select{
-
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 20px;
 }
 .select h2{
   margin-right: 10px;

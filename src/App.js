@@ -18,7 +18,7 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await fetch('https://jsonplaceholder.typicode.com/photos?_start=1&_limit=200')
+      const result = await fetch('https://jsonplaceholder.typicode.com/photos?_start=0&_limit=200')
       .then(response => response.json())
       .then(data => (data))
 
@@ -45,8 +45,7 @@ function App() {
           <h2>{item.id}</h2>
           <p>{item.title}</p>
           <p>{item.completed}</p>
-          <img style={{width:'220px',height:'220px'
-          }} src={item.thumbnailUrl}/>
+          <img src={item.thumbnailUrl}/>
           </div>
         </div>)
         
