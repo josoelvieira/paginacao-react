@@ -96,6 +96,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 20px;
+  color: #ffffff;
 }
 .select h2{
   margin-right: 10px;
@@ -112,4 +113,5 @@ body {
   padding: 8px;
   border:1px solid #03a9f4;
   background: #111111;
+  color:#ffffff;
 }
