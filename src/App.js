@@ -39,13 +39,13 @@ function App() {
       <div className='container'>
       {currentItens.map(item => {
         return (
-        <div className='box'>
+        <div className='box' key={item.id}>
           <span></span>
           <div className='content'>
           <h2>{item.id}</h2>
           <p>{item.title}</p>
           <p>{item.completed}</p>
-          <img src={item.thumbnailUrl}/>
+          <img src={item.thumbnailUrl} alt={item.title}/>
           </div>
         </div>)
         
