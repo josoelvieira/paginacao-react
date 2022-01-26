@@ -4,7 +4,7 @@ const PaginationSelect = ({itensPerPage, setItensPerPage}) => {
     return (
       <div className="select">
         <div>
-      <span>Itens por página: </span>
+      <h2>Itens por página: </h2>
       </div>
       <div>
         

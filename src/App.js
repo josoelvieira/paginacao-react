@@ -18,7 +18,7 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await fetch('https://jsonplaceholder.typicode.com/todos')
+      const result = await fetch('https://jsonplaceholder.typicode.com/photos')
       .then(response => response.json())
       .then(data => (data))
 
@@ -36,10 +36,22 @@ function App() {
     <div className="App">
         <PaginationSelect itensPerPage={itensPerPage} setItensPerPage={setItensPerPage}/>
       
+      <div className='container'>
       {currentItens.map(item => {
-        return <div className='item'><span>{item.id}</span><span>{item.title}</span><span>{item.completed}</span></div>
+        return (
+        <div className='box'>
+          <span></span>
+          <div className='content'>
+          <h2>{item.id}</h2>
+          <p>{item.title}</p>
+          <p>{item.completed}</p>
+          <img style={{width:'220px',height:'220px'
+          }} src={item.thumbnailUrl}/>
+          </div>
+        </div>)
         
       })}
+      </div>
       <Paginatio pages={pages} setCurrentPage={setCurrentPage}/>
     </div>
   );
