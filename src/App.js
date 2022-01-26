@@ -18,7 +18,7 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await fetch('https://jsonplaceholder.typicode.com/photos')
+      const result = await fetch('https://jsonplaceholder.typicode.com/photos?_start=1&_limit=200')
       .then(response => response.json())
       .then(data => (data))
 
