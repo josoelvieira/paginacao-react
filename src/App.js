@@ -1,6 +1,5 @@
 import './App.css';
 import { useEffect, useState  } from 'react';
-import { wait } from '@testing-library/user-event/dist/utils';
 import Paginatio from './components/Pagination';
 import PaginationSelect from './components/PaginationSelect'
 
